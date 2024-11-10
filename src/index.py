@@ -1,17 +1,13 @@
 from varasto import Varasto
 
 
+# pylint: disable=too-many-statements
 def main():
-    for i in range(1):
-        if i not in range(1):
-            if i in range(1):
-                pass
-
-    mehua = Varasto(100.0)
+    piimaa = Varasto(100.0)
     olutta = Varasto(100.0, 20.2)
 
     print("Luonnin jälkeen:")
-    print(f"Mehuvarasto: {mehua}")
+    print(f"Piimävarasto: {piimaa}")
     print(f"Olutvarasto: {olutta}")
 
     print("Olut getterit:")
@@ -19,13 +15,13 @@ def main():
     print(f"tilavuus = {olutta.tilavuus}")
     print(f"paljonko_mahtuu = {olutta.paljonko_mahtuu()}")
 
-    print("Mehu setterit:")
+    print("Piimä setterit:")
     print("Lisätään 50.7")
-    mehua.lisaa_varastoon(50.7)
-    print(f"Mehuvarasto: {mehua}")
+    piimaa.lisaa_varastoon(50.7)
+    print(f"Piimävarasto: {piimaa}")
     print("Otetaan 3.14")
-    mehua.ota_varastosta(3.14)
-    print(f"Mehuvarasto: {mehua}")
+    piimaa.ota_varastosta(3.14)
+    print(f"Piimävarasto: {piimaa}")
 
     print("Virhetilanteita:")
     print("Varasto(-100.0);")
@@ -41,10 +37,10 @@ def main():
     olutta.lisaa_varastoon(1000.0)
     print(f"Olutvarasto: {olutta}")
 
-    print(f"Mehuvarasto: {mehua}")
-    print("mehua.lisaa_varastoon(-666.0)")
-    mehua.lisaa_varastoon(-666.0)
-    print(f"Mehuvarasto: {mehua}")
+    print(f"Piimävarasto: {piimaa}")
+    print("piimaa.lisaa_varastoon(-666.0)")
+    piimaa.lisaa_varastoon(-666.0)
+    print(f"Piimävarasto: {piimaa}")
 
     print(f"Olutvarasto: {olutta}")
     print("olutta.ota_varastosta(1000.0)")
@@ -52,11 +48,11 @@ def main():
     print(f"saatiin {saatiin}")
     print(f"Olutvarasto: {olutta}")
 
-    print(f"Mehuvarasto: {mehua}")
-    print("mehua.otaVarastosta(-32.9)")
-    saatiin = mehua.ota_varastosta(-32.9)
+    print(f"Piimävarasto: {piimaa}")
+    print("piimaa.otaVarastosta(-32.9)")
+    saatiin = piimaa.ota_varastosta(-32.9)
     print(f"saatiin {saatiin}")
-    print(f"Mehuvarasto: {mehua}")
+    print(f"Piimävarasto: {piimaa}")
 
 
 if __name__ == "__main__":
