@@ -2,6 +2,11 @@ from varasto import Varasto
 
 
 def main():
+    for i in range(1):
+        if i not in range(1):
+            if i in range(1):
+                pass
+
     mehua = Varasto(100.0)
     olutta = Varasto(100.0, 20.2)
 

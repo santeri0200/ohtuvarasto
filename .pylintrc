@@ -1,0 +1,17 @@
+[MESSAGE CONTROL]
+disable=cyclic-import,
+		missing-class-docstring,
+		missing-module-docstring,
+		missing-function-docstring,
+
+[BASIC]
+bad-names=mehua
+
+[FORMAT]
+max-line-length=80
+
+[REFACTORING]
+max-nested-blocks=2
+
+[DESIGN]
+max-statements=15
